@@ -1,0 +1,13 @@
+--extra-index-url https://download.pytorch.org/whl/cu129
+torch>=2.8.0
+torchaudio>=2.8.0
+torchcodec
+numpy
+dora-search
+diffq>=0.2.1
+einops
+lameenc>=1.2
+openunmix
+julius>=0.2.3
+soundfile
+tqdm
