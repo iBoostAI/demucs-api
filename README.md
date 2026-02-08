@@ -9,17 +9,17 @@ drums, bass, and vocals from the rest of the accompaniment.
 
 # Demucs v4 API 服务部署指南
 
-## VPS 环境准备 (Debian 13, root 用户)
+## VPS 环境准备 (Debian)
 
 ### 1. 安装 Docker
 
 ```bash
 # 更新系统
-apt update && apt upgrade -y
+sudo apt update && apt upgrade -y
 
 # 安装 Docker
-apt install -y docker.io
-systemctl enable --now docker
+sudo apt install -y docker.io
+sudo systemctl enable --now docker
 
 # 验证
 docker info
@@ -135,3 +135,4 @@ cog push r8.im/yourname/demucs-api
 2. **镜像大小**: 约 5-10GB（包含 PyTorch 和模型）
 3. **成本**: Replicate T4 GPU ~$0.02/次
 4. **冷启动**: 首次调用约 30-60 秒（加载模型）
+
