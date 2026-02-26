@@ -1,17 +1,17 @@
-# Demucs v4 Inference-only API version
-# Inference-only fork: https://github.com/cj-mills/cjm-demucs-v4
-# Original: # https://github.com/adefossez/demucs
+# Inference-only fork of Demucs v4 for Python 3.12+ with TorchCodec.
+# Original: https://github.com/adefossez/demucs
 # License: MIT
 
 from pathlib import Path
 
 from setuptools import setup
 
+
 NAME = 'cjm-demucs-v4'
 DESCRIPTION = 'Inference-only fork of Demucs v4 that provides audio source separation with TorchCodec replacing torchaudio I/O.'
 
-URL = 'https://github.com/iBoostAI/demucs-api'
-AUTHOR = 'iBoostAI'
+URL = 'https://github.com/cj-mills/cjm-demucs-v4'
+AUTHOR = 'Christian J. Mills'
 REQUIRES_PYTHON = '>=3.12'
 
 HERE = Path(__file__).parent
