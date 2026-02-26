@@ -1,0 +1,8 @@
+einops
+julius>=0.2.3
+lameenc>=1.2
+openunmix
+pyyaml
+torch>=2.0
+torchcodec
+tqdm

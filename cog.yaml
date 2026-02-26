@@ -1,0 +1,12 @@
+build:
+  gpu: true
+  python_version: "3.12"
+  python_requirements: requirements-api.txt
+  system_packages:
+    - "ffmpeg"
+    - "libsndfile1"
+  run:
+    - pip install -U pip
+    - pip install -U .
+
+predict: "predict.py:Predictor"

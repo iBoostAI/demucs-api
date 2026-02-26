@@ -1,0 +1,10 @@
+--extra-index-url https://download.pytorch.org/whl/cu130
+torch>=2.8.0
+torchcodec
+numpy
+einops
+lameenc>=1.2
+openunmix
+julius>=0.2.3
+pyyaml
+tqdm
