@@ -11,7 +11,7 @@
 | `cog.yaml` | Cog 构建配置（GPU、Python 3.12、系统依赖） |
 | `requirements-api.txt` | API 运行时 Python 依赖 |
 | `predict.py` | API 入口，定义 `Predictor` 类（setup/predict） |
-| `demucs/` | Demucs 推理引擎（从 cjm-demucs-v4 fork） |
+| `demucs/` | Demucs 推理引擎 |
 
 ### 与原版 demucs 的主要区别
 
@@ -172,4 +172,5 @@ cog push r8.im/yourname/demucs-api
 2. **镜像大小**: 约 5-10GB（包含 PyTorch 和模型）
 3. **成本**: Replicate T4 GPU ~$0.02/次
 4. **冷启动**: 首次调用约 30-60 秒（加载模型）
+
 
