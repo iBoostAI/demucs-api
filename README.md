@@ -11,7 +11,7 @@ This project is based on [cjm-demucs-v4](https://github.com/cj-mills/cjm-demucs-
 | `cog.yaml` | Cog build config (GPU, Python 3.12, system deps) |
 | `requirements-api.txt` | Python dependencies for API runtime |
 | `predict.py` | API entry point, defines `Predictor` class (setup/predict) |
-| `demucs/` | Demucs inference engine (forked from cjm-demucs-v4) |
+| `demucs/` | Demucs inference engine (cjm-demucs-v4 fork) |
 
 ### Key Differences from Original Demucs
 
