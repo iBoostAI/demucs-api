@@ -72,10 +72,14 @@ cog --version
 
 ```bash
 # 设置 API Token (从 https://replicate.com/account/api-tokens 获取)
-export REPLICATE_API_TOKEN=r8_xxxxxxxxxxxxxxxxxxxxxxxx
+可选: export REPLICATE_API_TOKEN=r8_xxxxxxxxxxxxxxxxxxxxxxxx
 
 # 登录
 cog login
+
+如果没有设置 token 变量会提示回车后访问网页获取 token
+在VPS上不能打开网页，可在开发机器上打开 https://replicate.com/auth/token
+拷贝网页上显示的 token 粘贴到控制台
 ```
 
 ---
@@ -168,3 +172,4 @@ cog push r8.im/yourname/demucs-api
 2. **镜像大小**: 约 5-10GB（包含 PyTorch 和模型）
 3. **成本**: Replicate T4 GPU ~$0.02/次
 4. **冷启动**: 首次调用约 30-60 秒（加载模型）
+
