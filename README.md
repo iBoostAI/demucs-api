@@ -72,10 +72,14 @@ cog --version
 
 ```bash
 # Set API Token (get from https://replicate.com/account/api-tokens)
-export REPLICATE_API_TOKEN=r8_xxxxxxxxxxxxxxxxxxxxxxxx
+Optional: export REPLICATE_API_TOKEN=r8_xxxxxxxxxxxxxxxxxxxxxxxx
 
 # Login
 cog login
+
+If the token variable is not set, you will be prompted to press Enter and visit a webpage to obtain the token.
+Since you cannot open webpages on the VPS, you can open https://replicate.com/auth/token on your development machine,
+copy the token displayed on the webpage, and paste it into the console.
 ```
 
 ---
